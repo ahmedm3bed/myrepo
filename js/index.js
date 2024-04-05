@@ -47,10 +47,10 @@ let opened=0;
 
  var viewer = OpenSeadragon({
   id: "openseadragon-viewer",
-  prefixUrl: "../image/openseadragon/", // Path to OpenSeadragon images
+  prefixUrl:location.origin+location.pathname+(location.pathname.endsWith("/")?"":"/")+ "image/openseadragon/", // Path to OpenSeadragon images
   tileSources: {
       type: 'image',
-      url: "../image/sertficat.jpg", // URL to your JPEG image
+      url: location.origin+location.pathname+(location.pathname.endsWith("/")?"":"/")+"image/sertficat.jpg", // URL to your JPEG image
       width: 500, // Width of the image
       height: 300 // Height of the image
   },
