@@ -515,3 +515,14 @@ background-color: transparent;
     transform: scale(1.1);
 
   } */
+  .img-cert{
+    transition-duration: .5s;
+    cursor: e-resize;
+  }  
+.zoom{
+z-index: 5000;
+position: absolute;
+top: 50%;
+left: 50%;    
+transform: translate(-50%,-50%)scale(1.75);
+}
